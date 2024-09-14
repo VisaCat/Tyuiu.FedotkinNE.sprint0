@@ -4,16 +4,17 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{DC99F07D-B037-479E-8AE7-BED5925D27BF}</ProjectGuid>
-    <OutputType>Library</OutputType>
-    <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Tyuiu.FedotkinNE.Sprint0.Task0.V0.Lib</RootNamespace>
-    <AssemblyName>Tyuiu.FedotkinNE.Sprint0.Task0.V0.Lib</AssemblyName>
+    <ProjectGuid>{378E59A0-50EE-43A6-B4F7-38B6F6568EF7}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>Tyuiu.FedotkinNE.Sprint0.Task6.V0</RootNamespace>
+    <AssemblyName>Tyuiu.FedotkinNE.Sprint0.Task6.V0</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -23,6 +24,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
@@ -41,8 +43,21 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DataService.cs" />
+    <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Tyuiu.FedotkinNE.Sprint0.Task6.V0.Lib\Tyuiu.FedotkinNE.Sprint0.Task6.V0.Lib.csproj">
+      <Project>{c567e4f4-af0e-4737-b283-9da4c93b75a9}</Project>
+      <Name>Tyuiu.FedotkinNE.Sprint0.Task6.V0.Lib</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Tyuiu.FedotkinNE.Sprint0.Task6.V0.Test\Tyuiu.FedotkinNE.Sprint0.Task6.V0.Test.csproj">
+      <Project>{bd229f38-42c3-48c5-87c5-f13e35768c90}</Project>
+      <Name>Tyuiu.FedotkinNE.Sprint0.Task6.V0.Test</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
