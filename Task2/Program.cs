@@ -12,7 +12,8 @@ namespace Tyuiu.FedotkinNE.Sprint0.Task2.V0{
     class program
     {
         static void Main(string[]argc)        {
-            Console.WriteLine(DataService.Getmessage("Никита");
+            Console.WriteLine(DataService.GetMessage("Никита"));
+            Console.ReadKey();
         }
     }
 }
